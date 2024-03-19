@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="PopularityCss.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-wrap: wrap; /* Added */
+        }
+        .heading {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; /* Adjusted */
+        }
+        .parent {
+            text-align: center;
+            margin: 20px; /* Adjusted */
+        }
+        .child {
+            display: inline-block;
+            padding: 20px;
+            vertical-align: middle;
+            margin-top: 20px; /* Adjusted */
+        }
+        .div {
+            margin-bottom: 100px;
+        }
+        .progress-circle {
+            fill: none;
+            stroke-width: 10;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Entry 1 -->
+    <div class="parent">
+        <div class="child">
+            <div class="heading">
+                <h1>Shehnaaz Gill</h1>
+            </div>
+            <div class="skill">
+                <svg width="160" height="160">
+                    <circle class="progress-circle" cx="80" cy="80" r="70" stroke="#e91e63" />
+                    <circle class="progress-bar" cx="80" cy="80" r="70" stroke="#673ab7" stroke-dasharray="440" stroke-dashoffset="0" fill="none" />
+                </svg>
+                <div id="number1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Entry 2 -->
+    <div class="parent">
+        <div class="child">
+            <div class="heading">
+                <h1>Gautam Gulati</h1>
+            </div>
+            <div class="skill">
+                <svg width="160" height="160">
+                    <circle class="progress-circle" cx="80" cy="80" r="70" stroke="#e91e63" />
+                    <circle class="progress-bar" cx="80" cy="80" r="70" stroke="#673ab7" stroke-dasharray="440" stroke-dashoffset="0" fill="none" />
+                </svg>
+                <div id="number2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat for other entries -->
+
+</div>
+
+<script>
+    function startCounter(counterId, finalValue) {
+        let counter = 0;
+        let numberElement = document.getElementById(counterId);
+        let progressBar = document.querySelector(`#${counterId} + svg .progress-bar`);
+        let intervalId = setInterval(() => {
+            if (counter == finalValue) {
+                clearInterval(intervalId);
+            } else {
+                counter += 1;
+                numberElement.innerHTML = counter + "%";
+                let progress = 440 - (440 * counter / 100);
+                progressBar.style.strokeDashoffset = progress;
+            }
+        }, 30);
+    }
+
+    startCounter("number1", 65);
+    startCounter("number2", 67);
+    // Repeat for other entries
+
+</script>
+</body>
+</html>

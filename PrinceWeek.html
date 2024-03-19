@@ -1,0 +1,104 @@
+<!doctype HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="PrinceWeekCss.css">
+        <style>
+            .parent{
+               margin-top: 100px;
+            }
+            .child{
+      display:inline-block;
+	  padding: 10px;
+}
+        </style>
+    </head>
+    <body>
+    <div class="parent">
+        <div class="child">
+    <body class="bodyS7">
+        <div class="gaugeS7">
+            <div class="progressS7">
+                <div class="barS7"></div>
+                <div class="needleS7"></div>
+            </div>
+        </div>
+        <div class="msgS7">
+            <p class="processS7">Verification process</p>
+            <p class="successS7"style="text-align:center">16%</p>
+        </div>
+    </div>
+
+
+    <div class="child">
+        <body class="bodyS8">
+            <div class="gaugeS8">
+                <div class="progressS8">
+                    <div class="barS8"></div>
+                    <div class="needleS8"></div>
+                </div>
+            </div>
+            <div class="msgS8">
+                <p class="processS8">Verification process</p>
+                <p class="successS8"style="text-align:center">18%</p>
+    </div></div>
+
+
+    <div class="child">
+        <body class="bodyS9">
+            <div class="gaugeS9">
+                <div class="progressS9">
+                    <div class="barS9"></div>
+                    <div class="needleS9"></div>
+                </div>
+            </div>
+            <div class="msgS9">
+                <p class="processS9">Verification process</p>
+                <p class="successS9"style="text-align:center">13%</p>
+    </div></div>
+        <script>
+            const processS7_txt=document.querySelector('.processS7');
+            const successS7_txt=document.querySelector('.successS7');
+
+            setTimeout(()=>{
+                processS7_txt.classList.add('active');
+            },0)
+
+            setTimeout(toggleMsg7,1600);
+ 
+            function toggleMsg7(){
+                processS7_txt.classList.remove('active');
+                successS7_txt.classList.add('active');
+            }
+
+
+            const processS8_txt=document.querySelector('.processS8');
+            const successS8_txt=document.querySelector('.successS8');
+
+            setTimeout(()=>{
+                processS8_txt.classList.add('active');
+            },0)
+
+            setTimeout(toggleMsg8,1600);
+ 
+            function toggleMsg8(){
+                processS8_txt.classList.remove('active');
+                successS8_txt.classList.add('active');
+            }
+
+            const processS9_txt=document.querySelector('.processS9');
+            const successS9_txt=document.querySelector('.successS9');
+
+            setTimeout(()=>{
+                processS9_txt.classList.add('active');
+            },0)
+
+            setTimeout(toggleMsg9,1600);
+ 
+            function toggleMsg9(){
+                processS9_txt.classList.remove('active');
+                successS9_txt.classList.add('active');
+            }
+        </script>
+    </body>
+    </body>
+</html>

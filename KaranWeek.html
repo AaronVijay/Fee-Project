@@ -1,0 +1,104 @@
+<!doctype HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="KaranWeekCss.css">
+        <style>
+            .parent{
+               margin-top: 100px;
+            }
+            .child{
+      display:inline-block;
+	  padding: 10px;
+}
+        </style>
+    </head>
+    <body>
+    <div class="parent">
+        <div class="child">
+    <body class="bodyS10">
+        <div class="gaugeS10">
+            <div class="progressS10">
+                <div class="barS10"></div>
+                <div class="needleS10"></div>
+            </div>
+        </div>
+        <div class="msgS10">
+            <p class="processS10">Verification process</p>
+            <p class="successS10"style="text-align:center">11%</p>
+        </div>
+    </div>
+
+
+    <div class="child">
+        <body class="bodyS11">
+            <div class="gaugeS11">
+                <div class="progressS11">
+                    <div class="barS11"></div>
+                    <div class="needleS11"></div>
+                </div>
+            </div>
+            <div class="msgS11">
+                <p class="processS11">Verification process</p>
+                <p class="successS11"style="text-align:center">17%</p>
+    </div></div>
+
+
+    <div class="child">
+        <body class="bodyS12">
+            <div class="gaugeS12">
+                <div class="progressS12">
+                    <div class="barS12"></div>
+                    <div class="needleS12"></div>
+                </div>
+            </div>
+            <div class="msgS12">
+                <p class="processS12">Verification process</p>
+                <p class="successS12"style="text-align:center">16%</p>
+    </div></div>
+        <script>
+            const processS10_txt=document.querySelector('.processS10');
+            const successS10_txt=document.querySelector('.successS10');
+
+            setTimeout(()=>{
+                processS10_txt.classList.add('active');
+            },0)
+
+            setTimeout(toggleMsg10,1600);
+ 
+            function toggleMsg10(){
+                processS10_txt.classList.remove('active');
+                successS10_txt.classList.add('active');
+            }
+
+
+            const processS11_txt=document.querySelector('.processS11');
+            const successS11_txt=document.querySelector('.successS11');
+
+            setTimeout(()=>{
+                processS11_txt.classList.add('active');
+            },0)
+
+            setTimeout(toggleMsg11,1600);
+ 
+            function toggleMsg11(){
+                processS11_txt.classList.remove('active');
+                successS11_txt.classList.add('active');
+            }
+
+            const processS12_txt=document.querySelector('.processS12');
+            const successS12_txt=document.querySelector('.successS12');
+
+            setTimeout(()=>{
+                processS12_txt.classList.add('active');
+            },0)
+
+            setTimeout(toggleMsg12,1600);
+ 
+            function toggleMsg12(){
+                processS12_txt.classList.remove('active');
+                successS12_txt.classList.add('active');
+            }
+        </script>
+    </body>
+    </body>
+</html>

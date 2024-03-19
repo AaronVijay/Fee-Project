@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progress Bar</title>
+        <link rel="stylesheet" href="PopularityCss.css">
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        .heading {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .parent{
+	   text-align:center;
+       margin: 20px;
+}
+.child{
+    display: inline-block;
+            padding: 20px;
+            vertical-align: middle;
+            margin-top: 20px;
+}
+.div{
+    margin-bottom: 100px;
+}
+    </style>
+    
+    <body>
+    <div class="parent">
+        <div class="child" style="margin-top:500px">
+        <div class="container">
+            <div class="heading">
+                <h1>Shehnaaz Gill</h1>
+            </div>
+<div class="skill">
+    <div class="outer">
+    <div class="inner">
+    <div id="number1">
+     </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+    <defs>
+       <linearGradient id="GradientColor">
+          <stop offset="0%" stop-color="#e91e63" />
+          <stop offset="100%" stop-color="#673ab7" />
+       </linearGradient>
+    </defs>
+    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+</svg> 
+</div>
+</div>
+</div></div>
+<div  class="parent">
+<div class="child" style="margin-top:500px">
+    <div class="container">
+        <div class="heading">
+            <h1>Gautam Gulati</h1>
+        </div>
+<div class="skill">
+<div class="outer">
+<div class="inner">
+<div id="number2">
+ </div>
+</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+<defs>
+   <linearGradient id="GradientColor">
+      <stop offset="0%" stop-color="#e91e63" />
+      <stop offset="100%" stop-color="#673ab7" />
+   </linearGradient>
+</defs>
+<circle cx="80" cy="80" r="70" stroke-linecap="round" />
+</svg> 
+</div>
+</div>
+</div>
+
+</div>
+<div class="parent">
+    <div class="child">
+        <div class="container">
+            <div class="heading">
+                <h1>Prince Narula</h1>
+            </div>
+    <div class="skill">
+    <div class="outer">
+    <div class="inner">
+    <div id="number3">
+     </div>
+    </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+    <defs>
+       <linearGradient id="GradientColor">
+          <stop offset="0%" stop-color="#e91e63" />
+          <stop offset="100%" stop-color="#673ab7" />
+       </linearGradient>
+    </defs>
+    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg> 
+    </div>
+    </div>
+    </div></div>
+    <div class="parent">
+    <div class="child">
+        <div class="container">
+            <div class="heading">
+                <h1>Karan Kundra</h1>
+            </div>
+    <div class="skill">
+    <div class="outer">
+    <div class="inner">
+    <div id="number4">
+     </div>
+    </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+    <defs>
+       <linearGradient id="GradientColor">
+          <stop offset="0%" stop-color="#e91e63" />
+          <stop offset="100%" stop-color="#673ab7" />
+       </linearGradient>
+    </defs>
+    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg> 
+    </div>
+    </div> 
+    </div>
+</div>
+<div class="div">
+    <div class="container">
+        <div class="heading">
+            <h1>Dhinchak Pooja</h1>
+        </div>
+<div class="skill">
+<div class="outer">
+<div class="inner">
+<div id="number5">
+ </div>
+</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+<defs>
+   <linearGradient id="GradientColor">
+      <stop offset="0%" stop-color="#e91e63" />
+      <stop offset="100%" stop-color="#673ab7" />
+   </linearGradient>
+</defs>
+<circle cx="80" cy="80" r="70" stroke-linecap="round" />
+</svg> 
+</div>
+</div> 
+</div>
+<script>
+    let number1=document.getElementById("number1");
+    let counter1=0;
+    setInterval(()=>{
+        if(counter1==65){
+            clearInterval();
+        }else{
+            counter1+= 1;
+        number1.innerHTML=counter1 + "%";
+
+        }
+    },30)
+    let number2=document.getElementById("number2");
+    let counter2=0;
+    setInterval(()=>{
+        if(counter2==67){
+            clearInterval();
+        }else{
+            counter2+= 1;
+        number2.innerHTML=counter2 + "%";
+
+        }
+    },30)
+
+    let number3=document.getElementById("number3");
+    let counter3=0;
+    setInterval(()=>{
+        if(counter3==64){
+            clearInterval();
+        }else{
+            counter3+= 1;
+        number3.innerHTML=counter3 + "%";
+
+        }
+    },30)
+
+    let number4=document.getElementById("number4");
+    let counter4=0;
+    setInterval(()=>{
+        if(counter4==61){
+            clearInterval();
+        }else{
+            counter4+= 1;
+        number4.innerHTML=counter4 + "%";
+
+        }
+    },30)
+    
+    let number5=document.getElementById("number5");
+    let counter5=0;
+    setInterval(()=>{
+        if(counter5==61){
+            clearInterval();
+        }else{
+            counter5+= 1;
+        number5.innerHTML=counter5 + "%";
+
+        }
+    },30)
+
+</script>
+    </body>
+</html>
